@@ -80,3 +80,12 @@ Minutes: 25
 
 DONE
 - Used a linetracesingle by channel to detect a hit, display a debug marker if true
+
+---
+
+## Session 08
+
+Minutes: 35
+
+DONE
+- Impact particle effect emitted at point hit
