@@ -72,3 +72,11 @@ DONE
 - Drawing a debug helper at camera view when trigger is pulled
 - Added bullet collision trace channel, adjusted presets
 
+---
+
+## Session 07
+
+Minutes: 25 
+
+DONE
+- Used a linetracesingle by channel to detect a hit, display a debug marker if true
