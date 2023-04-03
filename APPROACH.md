@@ -46,6 +46,8 @@ DONE
 - Attached the spawned gun to the socket
 - Set the gun's parent to the player character
 
+---
+
 ## Session 05
 
 Minutes: 30
@@ -57,3 +59,16 @@ DONE
 - Added a muzzleflash uproperty
 - Muzzleflash particle emitter set in rifle blueprint
 - Muzzle flash spawned in pulltrigger
+
+---
+
+## Session 06
+
+Minutes: 35
+
+DONE
+- Initialised git repo. Added asste packs to gitignore because will be stripping them out
+- Pushed initial commit to github
+- Drawing a debug helper at camera view when trigger is pulled
+- Added bullet collision trace channel, adjusted presets
+
