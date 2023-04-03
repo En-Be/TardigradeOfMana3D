@@ -89,3 +89,13 @@ Minutes: 35
 
 DONE
 - Impact particle effect emitted at point hit
+
+---
+
+## Session 09
+
+Minutes: 18
+
+DONE
+- Override the take damage method
+- Log remaining health to console
