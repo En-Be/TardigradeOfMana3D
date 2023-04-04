@@ -116,7 +116,7 @@ DONE
 
 ---
 
-## Sessio 11
+## Session 11
 
 Minutes: 30
 
@@ -125,3 +125,17 @@ DONE
 - Created a navmeshboundsvolume
 - Expanded the volume to cover the map
 - On ai controller, added MoveToActor to Tick
+
+---
+
+## Session 12
+
+Minutes: 14.15 - 
+
+DONE
+- Conditional for if bot can see player
+- Bot stops moving if can't see player
+- Created a blackboard and behaviortree
+- Running behaviortree instead of conditional
+- Added a player location key to blackboard
+- Added a move and wait sequence to behaviortree
