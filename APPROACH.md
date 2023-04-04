@@ -113,3 +113,15 @@ DONE
 - Created a MyShooterAIController based on AIController
 - Created a Blueprint based on MyShooterAIController
 - Set the BP as the default on the BP_MyPlayerCharacter
+
+---
+
+## Sessio 11
+
+Minutes: 30
+
+DONE
+- On ai controller, SetFocus is used in BeginPlay to tell the bots who to aim at
+- Created a navmeshboundsvolume
+- Expanded the volume to cover the map
+- On ai controller, added MoveToActor to Tick
