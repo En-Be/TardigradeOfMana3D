@@ -99,3 +99,17 @@ Minutes: 18
 DONE
 - Override the take damage method
 - Log remaining health to console
+
+---
+
+## Session 10
+
+Minutes: 35
+
+DONE
+- Blending animation poses by bool IsDead
+- Declared and defined IsDead in c++, returns health less or equal to 0
+- In blueprints, pawn is cast as a MyPlayerCharacter, gets it's IsDead, sets the BP IsDead for the animGraph to use
+- Created a MyShooterAIController based on AIController
+- Created a Blueprint based on MyShooterAIController
+- Set the BP as the default on the BP_MyPlayerCharacter
