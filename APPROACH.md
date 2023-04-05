@@ -130,7 +130,7 @@ DONE
 
 ## Session 12
 
-Minutes: 14.15 - 
+Minutes: 45 
 
 DONE
 - Conditional for if bot can see player
@@ -139,3 +139,17 @@ DONE
 - Running behaviortree instead of conditional
 - Added a player location key to blackboard
 - Added a move and wait sequence to behaviortree
+
+---
+
+## Session 13
+
+Minutes: 35
+
+DONE
+- Changed behaviour tree to use a selector that checks if player is visible
+- If player is not visible, enemy walks to last know player location
+- Player location is cleared in c++ when not in lineofsight
+- Added a clearblackboardvalue c++ class
+- Included a necessary module in the build file
+- Added the new node to the blackboard tree
