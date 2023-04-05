@@ -171,8 +171,19 @@ DONE
 
 ## Session 15
 
-Minutes: 15.10 - 
+Minutes: 30
 
 DONE
 - Added service nodes for checking player location
 - Behavior created in tree nodes rather than plain text
+
+---
+
+## Session 16
+
+Minutes: 15.57
+
+DONE
+- Added collision query parameters so the linetrace knows what to ignore when shooting
+- When player or enemy is dead, their controller is detached and their collider is disabled
+- Set a game mode BP that knows when a pawn is killed

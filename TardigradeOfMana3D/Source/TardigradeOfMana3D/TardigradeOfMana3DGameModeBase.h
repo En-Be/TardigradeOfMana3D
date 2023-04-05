@@ -14,4 +14,6 @@ class TARDIGRADEOFMANA3D_API ATardigradeOfMana3DGameModeBase : public AGameModeB
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void PawnKilled(APawn* PawnKilled);
 };

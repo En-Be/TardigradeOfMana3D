@@ -3,6 +3,8 @@
 
 #include "MyPlayerCharacter.h"
 #include "Gun.h"
+#include "Components/CapsuleComponent.h"
+#include "TardigradeOfMana3DGameModeBase.h"
 
 // Sets default values
 AMyPlayerCharacter::AMyPlayerCharacter()
@@ -55,8 +57,19 @@ float AMyPlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dam
 	DamageToApply = FMath::Min(Health, DamageToApply);
 	Health -= DamageToApply;
 	UE_LOG(LogTemp, Warning, TEXT("Health remaining %f"), Health);
-	return DamageToApply;
 
+	if (IsDead())
+	{
+		DetachFromControllerPendingDestroy();
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		ATardigradeOfMana3DGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ATardigradeOfMana3DGameModeBase>();
+		if (GameMode != nullptr)
+		{
+			GameMode->PawnKilled(this);
+		}
+	}
+
+	return DamageToApply;
 }
 
 void AMyPlayerCharacter::MoveForwardAndBack(float AxisValue)
