@@ -166,3 +166,13 @@ DONE
 - Shoot casts the owner as a myplayercharacter
 - Calls the myplayercharacter shoot
 - Behaviourtree has a shoot and wait loop sequence to prevent shooting evey frame
+
+---
+
+## Session 15
+
+Minutes: 15.10 - 
+
+DONE
+- Added service nodes for checking player location
+- Behavior created in tree nodes rather than plain text
