@@ -34,12 +34,13 @@ public:
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const &DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
+	void Shoot();
+
 private:
 	void MoveForwardAndBack(float AxisValue);
 	void MoveSideways(float AxisValue);
 	void LookUpAndDown(float AxisValue);
 	void LookSideways(float AxisValue);
-	void Shoot();
 
 	UPROPERTY(EditAnywhere)
 		float RotationRate = 10;

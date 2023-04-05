@@ -153,3 +153,16 @@ DONE
 - Added a clearblackboardvalue c++ class
 - Included a necessary module in the build file
 - Added the new node to the blackboard tree
+
+---
+
+## Session 14
+
+Minutes: 60
+
+DONE
+- New node gets owner's blackboard component and clears selected key
+- New node for shooting
+- Shoot casts the owner as a myplayercharacter
+- Calls the myplayercharacter shoot
+- Behaviourtree has a shoot and wait loop sequence to prevent shooting evey frame
