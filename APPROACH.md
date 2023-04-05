@@ -181,9 +181,20 @@ DONE
 
 ## Session 16
 
-Minutes: 15.57
+Minutes: 30
 
 DONE
 - Added collision query parameters so the linetrace knows what to ignore when shooting
 - When player or enemy is dead, their controller is detached and their collider is disabled
 - Set a game mode BP that knows when a pawn is killed
+
+---
+
+## Session 17
+
+Minutes: 20
+
+DONE
+- Created a player controller based on player controller
+- set a blueprint class based on the player controller as the gamemode default
+- Added a function on the player controller which overrides gamehasended with a 5 second restart timer
