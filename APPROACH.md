@@ -198,3 +198,16 @@ DONE
 - Created a player controller based on player controller
 - set a blueprint class based on the player controller as the gamemode default
 - Added a function on the player controller which overrides gamehasended with a 5 second restart timer
+
+--- 
+
+## Session 18
+
+Minutes: 20
+
+TODO
+- Created a UI widget
+- Added UMG dependency to build file
+- Added a lose screen class to myplayercontroller.h
+- Assigned the class in the playercontroller blueprint
+- Added the widget to viewport when player dies

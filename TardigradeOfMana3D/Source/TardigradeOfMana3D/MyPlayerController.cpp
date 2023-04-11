@@ -3,6 +3,7 @@
 
 #include "MyPlayerController.h"
 #include "TimerManager.h"
+#include "Blueprint/UserWidget.h"
 
 void AMyPlayerController::GameHasEnded(class AActor* EndGameFocus, bool bIsWinner)
 {
@@ -10,5 +11,11 @@ void AMyPlayerController::GameHasEnded(class AActor* EndGameFocus, bool bIsWinne
 
 	UE_LOG(LogTemp, Warning, TEXT("We Have finished."))
 
-		GetWorldTimerManager().SetTimer(RestartTimer, this, &APlayerController::RestartLevel, RestartDelay);
+	UUserWidget* LoseScreen = CreateWidget(this, LoseScreenClass);
+	if (LoseScreen != nullptr)
+	{
+		LoseScreen->AddToViewport();
+	}
+
+	GetWorldTimerManager().SetTimer(RestartTimer, this, &APlayerController::RestartLevel, RestartDelay);
 }

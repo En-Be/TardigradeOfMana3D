@@ -13,6 +13,7 @@ UCLASS()
 class TARDIGRADEOFMANA3D_API AKillEmAllGameMode : public ATardigradeOfMana3DGameModeBase
 {
 	GENERATED_BODY()
+
 public:
 	virtual void PawnKilled(APawn* PawnKilled) override;
 };
