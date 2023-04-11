@@ -16,4 +16,7 @@ class TARDIGRADEOFMANA3D_API AKillEmAllGameMode : public ATardigradeOfMana3DGame
 
 public:
 	virtual void PawnKilled(APawn* PawnKilled) override;
+
+private:
+	void EndGame(bool bIsPlayerWinner);
 };
