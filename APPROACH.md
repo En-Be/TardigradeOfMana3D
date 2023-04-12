@@ -254,3 +254,12 @@ DONE
 - Added a c++ method to get player character health percent
 - Bind the progress bar percent to a graph
 - In the graph, cast the owner as pawn to then call the health percent method
+
+## Session 23
+
+Minutes: 16.03 - 
+
+DONE
+- Added aim offset to animgraph
+- Set pitch in eventgraph
+- Changed AI aim to look for player object instead of locations
