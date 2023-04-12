@@ -212,6 +212,8 @@ DONE
 - Assigned the class in the playercontroller blueprint
 - Added the widget to viewport when player dies
 
+---
+
 ## Session 19
 
 Minutes: 40
@@ -220,3 +222,14 @@ DONE
 - Iterate over actors in the level to see if player has lost
 - Iterate over actors to see if all pawns are dead
 - Display win widget when all AI controllers are dead
+
+---
+
+## Session 20
+
+Minutes: 10.50 - 
+
+DONE
+- Refactored gun::pulltrigger to seperate methods
+- Spawning a shoot sound attached to the gun
+- Spawning an impact sound at the hit location
