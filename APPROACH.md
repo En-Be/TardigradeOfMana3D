@@ -227,9 +227,18 @@ DONE
 
 ## Session 20
 
-Minutes: 10.50 - 
+Minutes: 30
 
 DONE
 - Refactored gun::pulltrigger to seperate methods
 - Spawning a shoot sound attached to the gun
 - Spawning an impact sound at the hit location
+
+## Session 21
+
+Minutes: 20
+
+DONE
+- Swapped individual sound waves for sound cues
+- Random sound selection and modulation in cues
+- Made a default attenuation settings and set it in shot and impact cues
