@@ -242,3 +242,15 @@ DONE
 - Swapped individual sound waves for sound cues
 - Random sound selection and modulation in cues
 - Made a default attenuation settings and set it in shot and impact cues
+
+## Session 22
+
+Minutes: 40 
+
+DONE
+- Created a HUD widget which spawns at play
+- Remove HUD from display when game over
+- Added a progress bar to hud bp
+- Added a c++ method to get player character health percent
+- Bind the progress bar percent to a graph
+- In the graph, cast the owner as pawn to then call the health percent method

@@ -32,6 +32,11 @@ bool AMyPlayerCharacter::IsDead() const
 	return Health <= 0;
 }
 
+float AMyPlayerCharacter::GetHealthPercent() const
+{
+	return Health / MaxHealth;
+}
+
 // Called every frame
 void AMyPlayerCharacter::Tick(float DeltaTime)
 {

@@ -5,10 +5,21 @@
 #include "TimerManager.h"
 #include "Blueprint/UserWidget.h"
 
+void AMyPlayerController::BeginPlay()
+{
+	Super::BeginPlay();
+	HUD = CreateWidget(this, HUDClass);
+	if (HUD != nullptr)
+	{
+		HUD->AddToViewport();
+	}
+}
+
 void AMyPlayerController::GameHasEnded(class AActor* EndGameFocus, bool bIsWinner)
 {
 	Super::GameHasEnded(EndGameFocus, bIsWinner);
 
+	HUD->RemoveFromViewport();
 	UE_LOG(LogTemp, Warning, TEXT("We Have finished."))
 
 	if (bIsWinner)
@@ -31,3 +42,5 @@ void AMyPlayerController::GameHasEnded(class AActor* EndGameFocus, bool bIsWinne
 
 	GetWorldTimerManager().SetTimer(RestartTimer, this, &APlayerController::RestartLevel, RestartDelay);
 }
+
+
