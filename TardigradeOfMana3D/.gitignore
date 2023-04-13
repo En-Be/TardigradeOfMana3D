@@ -68,3 +68,6 @@ DerivedDataCache/*
 
 # Extra assets
 Content/AssetPacks
+
+# Hot reload files
+*.pdb

@@ -268,7 +268,7 @@ DONE
 
 ## Session 24
 
-Minutes: 25
+Minutes: 30
 
 DONE
 - Added a 'jump' input mapping
@@ -277,3 +277,13 @@ DONE
 - Added 'grounded' and 'airborn' states
 - Added an airborn animation
 - Added a boolean that is the condition for changing states
+- Added .pdb files to gitignore
+
+## Session 25
+
+Minutes: 27
+
+DONE
+- Used 'is falling' from the character class to set the 'is airborn' boolean in the animgraph
+- Added a death state machine with alive and dead states
+- Added ambient music
