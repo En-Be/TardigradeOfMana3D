@@ -257,9 +257,23 @@ DONE
 
 ## Session 23
 
-Minutes: 16.03 - 
+Minutes: 27
 
 DONE
 - Added aim offset to animgraph
 - Set pitch in eventgraph
 - Changed AI aim to look for player object instead of locations
+
+---
+
+## Session 24
+
+Minutes: 25
+
+DONE
+- Added a 'jump' input mapping
+- Bound the input action to a call to 'Jump' in the character c++
+- Added a state machine in the animgraph
+- Added 'grounded' and 'airborn' states
+- Added an airborn animation
+- Added a boolean that is the condition for changing states
