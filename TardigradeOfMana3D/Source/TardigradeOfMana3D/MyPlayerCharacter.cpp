@@ -19,7 +19,7 @@ void AMyPlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	Health = MaxHealth;
+	Health = MaxHealth/10;
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
 	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);

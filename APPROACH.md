@@ -287,3 +287,19 @@ DONE
 - Used 'is falling' from the character class to set the 'is airborn' boolean in the animgraph
 - Added a death state machine with alive and dead states
 - Added ambient music
+
+---
+
+## Session 26
+
+Minutes: 30
+
+TODO
+- Enemies start at low health and can't shoot
+- Shooting enemies increases their health
+- Full health enemies stop following player
+
+DONE
+- Changed guns to do negative damage
+- Set character health to start at maxhealth/10
+- Added a selector node to the enemy AI
