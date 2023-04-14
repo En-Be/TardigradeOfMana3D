@@ -303,3 +303,31 @@ DONE
 - Changed guns to do negative damage
 - Set character health to start at maxhealth/10
 - Added a selector node to the enemy AI
+
+## Session 27
+
+Minutes: 120
+
+TODO
+- Make selector check if ai is at full health
+- Move to startlocation if yes
+- Existing behaviour if no
+
+DONE
+- Added a ufunction 'is healed' to ai controller which call to player character
+- Added a ufunction 'is healed' to player character which checks health against max health
+- Added a selector in ai behaviour tree which checks 'is healed' to choose existing behaviour or move to start
+- Added a BTService 'AI is healed'
+- Trying to the the owner controller but 'GetPawn()' is apparently undefined. Asking for help
+
+## Sessino 28
+
+Minutes: 16.20 - 
+
+TODO
+- Clamp the health of pawns to not go over max
+
+DONE
+- Health is clamped
+- Commented out the bt service, set the 'AIishealed' boolean in blueprint instead
+- AI behaviour not as expected

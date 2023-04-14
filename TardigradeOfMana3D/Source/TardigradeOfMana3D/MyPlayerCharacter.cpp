@@ -32,6 +32,11 @@ bool AMyPlayerCharacter::IsDead() const
 	return Health <= 0;
 }
 
+bool AMyPlayerCharacter::IsHealed() const
+{
+	return Health >= MaxHealth;
+}
+
 float AMyPlayerCharacter::GetHealthPercent() const
 {
 	return Health / MaxHealth;
@@ -59,9 +64,10 @@ void AMyPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 
 float AMyPlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser); // Why doesn't this reduce health twice?
+	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	DamageToApply = FMath::Min(Health, DamageToApply);
 	Health -= DamageToApply;
+	Health = FMath::Clamp(Health, 0, MaxHealth);
 	UE_LOG(LogTemp, Warning, TEXT("Health remaining %f"), Health);
 
 	if (IsDead())
@@ -74,6 +80,15 @@ float AMyPlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dam
 
 		DetachFromControllerPendingDestroy();
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
+
+	if (IsHealed())
+	{
+		ATardigradeOfMana3DGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ATardigradeOfMana3DGameModeBase>();
+		if (GameMode != nullptr)
+		{
+			//GameMode->PawnHealed(this);
+		}
 	}
 
 	return DamageToApply;

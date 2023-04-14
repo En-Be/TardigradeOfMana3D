@@ -35,3 +35,15 @@ bool AMyShooterAIController::IsDead() const
 	
 	return true;
 }
+
+bool AMyShooterAIController::IsHealed() const
+{
+	AMyPlayerCharacter* ControlledCharacter = Cast<AMyPlayerCharacter>(GetPawn());
+	if (ControlledCharacter != nullptr)
+	{
+		return ControlledCharacter->IsHealed();
+		//GetBlackboardComponent()->SetValueAsBoolean(TEXT("IsHealed"), GetPawn()->true);
+	}
+
+	return true;
+}
