@@ -320,9 +320,9 @@ DONE
 - Added a BTService 'AI is healed'
 - Trying to the the owner controller but 'GetPawn()' is apparently undefined. Asking for help
 
-## Sessino 28
+## Session 28
 
-Minutes: 16.20 - 
+Minutes: 75
 
 TODO
 - Clamp the health of pawns to not go over max
@@ -331,3 +331,26 @@ DONE
 - Health is clamped
 - Commented out the bt service, set the 'AIishealed' boolean in blueprint instead
 - AI behaviour not as expected
+
+---
+
+## Session 29
+
+Minutes: 25
+
+TODO
+- Fix behaviour tree
+
+DONE
+- Set the 'observer aborts' option to 'both' on new blackboard condition
+
+## Session 30
+
+Minutes: 25
+
+TODO
+- Sculpt eyeball creature
+
+DONE
+- Sculpt eyeball creature
+![](wip/screenshots/wip_04.jpg)
