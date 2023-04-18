@@ -344,6 +344,7 @@ TODO
 DONE
 - Set the 'observer aborts' option to 'both' on new blackboard condition
 
+
 ## Session 30
 
 Minutes: 25
@@ -354,3 +355,15 @@ TODO
 DONE
 - Sculpt eyeball creature
 ![](wip/screenshots/wip_04.jpg)
+
+
+## Session 31
+
+Minutes: 38
+
+TODO
+- Retopo creature
+
+DONE
+- Retopo creature
+![](wip/screenshots/wip_05.jpg)
