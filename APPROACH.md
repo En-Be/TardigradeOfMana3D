@@ -367,3 +367,22 @@ TODO
 DONE
 - Retopo creature
 ![](wip/screenshots/wip_05.jpg)
+
+---
+
+## Session 32
+
+Minutes: 90 mins
+
+TODO
+- UV creature
+- Bake AO
+
+DONE
+- Mark seams
+- unwrap
+- position islands
+- painted base colour
+- blender erased texture?!?!?
+- repainted base colour
+![](wip/screenshots/wip_06.jpg)
