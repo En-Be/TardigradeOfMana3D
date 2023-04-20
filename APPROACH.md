@@ -414,3 +414,19 @@ DONE
 - removed weight from eye bone
 - edited weights for eyelids
 - parented eyeball to eye bone
+
+![](wip/screenshots/wip_07.jpg)
+
+## Session 35
+
+Minutes: 22.40-
+
+TODO
+- clean mesh
+- idle animation
+
+DONE
+- clean mesh
+- idle animation
+![](wip/screenshots/wip_08.gif)
+- there are some strange shading artifacts on the mesh
