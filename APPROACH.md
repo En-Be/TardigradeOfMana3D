@@ -385,4 +385,17 @@ DONE
 - painted base colour
 - blender erased texture?!?!?
 - repainted base colour
+
+---
+
+## Session 33
+
+Minutes: 27
+
+TODO
+- Retexture the pod creature with gradients
+
+DONE
+- Retexture the pod creature with gradients
+- Edited specular on eye and body
 ![](wip/screenshots/wip_06.jpg)
