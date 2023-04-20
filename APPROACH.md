@@ -419,7 +419,7 @@ DONE
 
 ## Session 35
 
-Minutes: 22.40-
+Minutes: 60
 
 TODO
 - clean mesh
