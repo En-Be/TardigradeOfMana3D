@@ -399,3 +399,18 @@ DONE
 - Retexture the pod creature with gradients
 - Edited specular on eye and body
 ![](wip/screenshots/wip_06.jpg)
+
+
+## Session 34
+
+Minutes: 42 
+
+TODO
+- Rig pod creature
+
+DONE
+- Made a rig
+- parented body with auto weights
+- removed weight from eye bone
+- edited weights for eyelids
+- parented eyeball to eye bone
