@@ -430,3 +430,19 @@ DONE
 - idle animation
 ![](wip/screenshots/wip_08.gif)
 - there are some strange shading artifacts on the mesh
+
+---
+
+## Session 36
+
+Minutes: 30
+
+TODO
+- Aggro animation
+- Solve artifacts
+
+DONE
+- Started making an erratic animation
+- Realised would be better to just use noise curves on position and scale
+- Baked noise modifiers to keyframes
+![](wip/screenshots/wip_10.gif)
