@@ -446,3 +446,18 @@ DONE
 - Realised would be better to just use noise curves on position and scale
 - Baked noise modifiers to keyframes
 ![](wip/screenshots/wip_10.gif)
+
+---
+
+## Session 37
+
+Minutes: 25
+
+TODO
+- Attack animation
+
+DONE
+- Added rotation noise to aggro animation
+![](wip/screenshots/wip_12.gif)
+- Attack animation
+![](wip/screenshots/wip_11.gif)
