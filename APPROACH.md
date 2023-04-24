@@ -464,7 +464,7 @@ DONE
 
 ## Session 38 
 
-Minutes: 27
+Minutes: 30
 
 TODO
 - New unreal level
@@ -481,3 +481,22 @@ https://www.immersivelimit.com/tutorials/export-animations-from-blender-to-unrea
 - Imported pod creature to new 'characters' folder
 - Pod creature was tiny, reset blender units scale to 1
 - Set an idle animation, playing fine
+
+## Session 39
+
+Minutes: 35
+
+TODO
+- Export+import pod texture
+- New pod creature blueprints
+
+DONE
+- png exported
+- png won't import
+- opened in krita and exported
+- png imported to unreal
+- png applied to material
+- is too shiny, will need to set it in editor or create pbr maps in blender
+- pod is too low off the floor, will need to adjust animations
+- attack animation is too long, needs to be snappier
+- eyeball not animating, could be a weighting problem
