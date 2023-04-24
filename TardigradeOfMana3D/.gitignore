@@ -67,7 +67,7 @@ Intermediate/*
 DerivedDataCache/*
 
 # Extra assets
-Content/AssetPacks
+Content/temp/AssetPacks
 
 # Hot reload files
 *.pdb

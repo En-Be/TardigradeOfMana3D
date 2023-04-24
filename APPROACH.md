@@ -461,3 +461,23 @@ DONE
 ![](wip/screenshots/wip_12.gif)
 - Attack animation
 ![](wip/screenshots/wip_11.gif)
+
+## Session 38 
+
+Minutes: 27
+
+TODO
+- New unreal level
+- Export pod creature from blender
+- Import pod creature to Unreal
+- Create new pod creature blueprint
+
+DONE
+- Followed these instruction on exporting:
+https://www.immersivelimit.com/tutorials/export-animations-from-blender-to-unreal-engine
+- Moved existing content to 'temp' folder
+- Duplicated level, renamed 'demo', deleted assets except sky etc
+- Added a cylinder for temp floor
+- Imported pod creature to new 'characters' folder
+- Pod creature was tiny, reset blender units scale to 1
+- Set an idle animation, playing fine
