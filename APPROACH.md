@@ -500,3 +500,16 @@ DONE
 - pod is too low off the floor, will need to adjust animations
 - attack animation is too long, needs to be snappier
 - eyeball not animating, could be a weighting problem
+
+---
+
+## Session 40
+
+Minutes: 30
+
+TODO
+- Set material properties in engine OR generate PBR maps in blender
+
+DONE
+- Used 'constant' nodes to plug a value into the specular and metallic parameters of the materials
+- Increased the intensity of the scene direction light
