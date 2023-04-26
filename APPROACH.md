@@ -499,7 +499,7 @@ DONE
 - is too shiny, will need to set it in editor or create pbr maps in blender
 - pod is too low off the floor, will need to adjust animations
 - attack animation is too long, needs to be snappier
-- eyeball not animating, could be a weighting problem
+- mesh is collapsing, could be a weighting problem
 
 ---
 
@@ -513,3 +513,19 @@ TODO
 DONE
 - Used 'constant' nodes to plug a value into the specular and metallic parameters of the materials
 - Increased the intensity of the scene direction light
+
+## Session 41
+
+Minutes: 180 minutes
+
+TODO
+- Weight the eyeball manually
+- Re-export and import
+
+DONE
+- Weight the eyeball manually
+- Re-export and import
+- Still not deforming properly
+- Tried different import and export options
+- Tried normalising the weights
+- Posted in slack asking for help
