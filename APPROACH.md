@@ -529,3 +529,18 @@ DONE
 - Tried different import and export options
 - Tried normalising the weights
 - Posted in slack asking for help
+
+---
+
+## Session 42
+
+Minutes: 80
+
+TODO
+- Try again to fix mesh deformation glitch
+
+DONE
+- Vertex groups and bone weight paints aren't the same, should they be?
+- Removed armature modifier, deleted vertex groups
+- Added new automatic weights
+- After lots omre trial and error, going to try an add-on that creates game-ready rigs
