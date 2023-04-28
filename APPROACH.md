@@ -544,3 +544,25 @@ DONE
 - Removed armature modifier, deleted vertex groups
 - Added new automatic weights
 - After lots omre trial and error, going to try an add-on that creates game-ready rigs
+
+---
+
+## Session 43
+
+Minutes: 11.58 - 
+
+TODO
+- Download and install addon
+- Download mannequin model
+- Make test rigify rig
+- Generate game-ready rig
+- Export and import to Unreal
+
+DONE
+- Download and install addon
+- Download mannequin model
+- Make test rigify rig
+- Generate game-ready rig
+- Export and import to Unreal
+- Seems to be working
+![](wip/screenshots/wip_17.gif)
