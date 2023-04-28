@@ -549,7 +549,7 @@ DONE
 
 ## Session 43
 
-Minutes: 11.58 - 
+Minutes: 60
 
 TODO
 - Download and install addon
@@ -566,3 +566,23 @@ DONE
 - Export and import to Unreal
 - Seems to be working
 ![](wip/screenshots/wip_17.gif)
+
+
+## Session 44
+
+Minutes: 115
+
+TODO
+- Test pod creature
+- Addon action baking
+- Build new rig for podcreature following P2Design course
+
+DONE
+- Tried generating rig with addon, doesn't fix issue
+- Recreated a simpler rig with a flat bone heirarchy and 'child of' contraints where appropriate
+- Works
+![](wip/screenshots/wip_18.gif)
+- Can this be done without a proxy rig?
+- A proxy needs to be created, but it doesn't need the meshes to be bound to it, or have the actions baked
+- Tested the mannequin (rigify), it does need binding and baking
+- A way to edit animations without changing the parenting would be useful
