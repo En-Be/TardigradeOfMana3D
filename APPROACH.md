@@ -603,3 +603,19 @@ DONE
 - Reanimated idle loop
 - Baked and imported to Unreal
 - Works
+
+## Session 46
+
+Minutes: 20
+
+TODO
+- Reanimate pod creature
+    - Agressive
+    - Attack
+
+DONE
+- Reanimate pod creature
+    - Agressive
+    - Attack
+- Imported to unreal
+- Remade body material in unreal
