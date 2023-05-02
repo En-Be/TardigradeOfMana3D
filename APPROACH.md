@@ -619,3 +619,17 @@ DONE
     - Attack
 - Imported to unreal
 - Remade body material in unreal
+
+## Session 47
+
+Minutes: 15.00 - 
+
+TODO
+- Duplicate enemy blueprints
+- Adapt enemy blueprints to use pod creature
+- Change game win state to heal all rather than kill all
+
+DONE
+- Made a PodCreature class to create BP from
+- Copied relevent functions from playercharacter class
+- Adapted the AIController and animgraph partway, very confused, need to step back

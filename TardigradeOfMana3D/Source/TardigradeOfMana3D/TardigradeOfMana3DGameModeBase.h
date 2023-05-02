@@ -16,4 +16,6 @@ class TARDIGRADEOFMANA3D_API ATardigradeOfMana3DGameModeBase : public AGameModeB
 	
 public:
 	virtual void PawnKilled(APawn* PawnKilled);
+	virtual void PawnHealed(APawn* PawnHealed);
+
 };

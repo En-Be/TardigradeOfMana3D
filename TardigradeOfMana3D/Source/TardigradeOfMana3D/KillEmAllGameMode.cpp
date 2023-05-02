@@ -29,6 +29,29 @@ void AKillEmAllGameMode::PawnKilled(APawn* PawnKilled)
 	EndGame(true);
 }
 
+void AKillEmAllGameMode::PawnHealed(APawn* PawnHealed)
+{
+	Super::PawnHealed(PawnHealed);
+
+	UE_LOG(LogTemp, Warning, TEXT("A pawn was healed"));
+
+	APlayerController* PlayerController = Cast<APlayerController>(PawnHealed->GetController());
+	if (PlayerController != nullptr)
+	{
+		//EndGame(false);
+	}
+
+	for (AMyShooterAIController* Controller : TActorRange<AMyShooterAIController>(GetWorld()))
+	{
+		if (!Controller->IsHealed())
+		{
+			return;
+		}
+	}
+
+	OpenGate();
+}
+
 void AKillEmAllGameMode::EndGame(bool bIsPlayerWinner)
 {
 	for (AController* Controller : TActorRange<AController>(GetWorld()))
@@ -36,4 +59,17 @@ void AKillEmAllGameMode::EndGame(bool bIsPlayerWinner)
 		bool bIsWinner = Controller->IsPlayerController() == bIsPlayerWinner;
 		Controller->GameHasEnded(Controller->GetPawn(), bIsWinner);
 	}
+}
+
+void AKillEmAllGameMode::OpenGate()
+{
+	UE_LOG(LogTemp, Warning, TEXT("A pawn was healed"));
+
+	/*
+	for (AController* Controller : TActorRange<AController>(GetWorld()))
+	{
+		bool bIsWinner = Controller->IsPlayerController() == bIsPlayerWinner;
+		Controller->GameHasEnded(Controller->GetPawn(), bIsWinner);
+	}
+	*/
 }

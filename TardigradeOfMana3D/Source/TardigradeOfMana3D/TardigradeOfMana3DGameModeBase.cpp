@@ -7,3 +7,8 @@ void ATardigradeOfMana3DGameModeBase::PawnKilled(APawn* PawnKilled)
 {
 
 }
+
+void ATardigradeOfMana3DGameModeBase::PawnHealed(APawn* PawnHealed)
+{
+
+}
