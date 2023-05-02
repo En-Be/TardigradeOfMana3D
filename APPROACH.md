@@ -579,10 +579,27 @@ TODO
 
 DONE
 - Tried generating rig with addon, doesn't fix issue
-- Recreated a simpler rig with a flat bone heirarchy and 'child of' contraints where appropriate
+- Recreated a simpler rig with a flat bone heirarchy and 'child of' constraints where appropriate
 - Works
 ![](wip/screenshots/wip_18.gif)
 - Can this be done without a proxy rig?
 - A proxy needs to be created, but it doesn't need the meshes to be bound to it, or have the actions baked
 - Tested the mannequin (rigify), it does need binding and baking
 - A way to edit animations without changing the parenting would be useful
+
+--- 
+
+## Session 45
+
+Minutes: 45
+
+TODO
+- Reanimate pod creature
+    - Idle
+    - Agressive
+    - Attack
+
+DONE
+- Reanimated idle loop
+- Baked and imported to Unreal
+- Works
