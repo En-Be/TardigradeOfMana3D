@@ -622,7 +622,7 @@ DONE
 
 ## Session 47
 
-Minutes: 15.00 - 
+Minutes: 100
 
 TODO
 - Duplicate enemy blueprints
@@ -633,3 +633,24 @@ DONE
 - Made a PodCreature class to create BP from
 - Copied relevent functions from playercharacter class
 - Adapted the AIController and animgraph partway, very confused, need to step back
+
+---
+
+## Session 48
+
+Minutes: 180
+
+DONE
+- Implemented pod creature except for it's attack
+
+---
+
+## Session 49
+
+Minutes: 30 
+
+TODO
+- BTTasks for pod creature attack and move
+- Switch pod creature animation state for attack/move
+- BTTask 'attack' sets a bool which is used to update state machine
+- Animgraph notify works

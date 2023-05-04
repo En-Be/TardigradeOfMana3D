@@ -19,6 +19,8 @@ void APodCreature::BeginPlay()
 	
 	Health = MaxHealth / 10;
 
+	Attacking = false;
+
 }
 
 // Called every frame
@@ -38,6 +40,21 @@ void APodCreature::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 bool APodCreature::IsHealed() const
 {
 	return Health >= MaxHealth;
+}
+
+bool APodCreature::IsAttacking() const
+{
+	return Attacking;
+}
+
+void APodCreature::Attack()
+{
+	Attacking = true;
+}
+
+void APodCreature::Patrol()
+{
+	Attacking = false;
 }
 
 float APodCreature::TakeDamage(float DamageAmount, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)

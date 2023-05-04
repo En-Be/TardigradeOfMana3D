@@ -29,6 +29,13 @@ public:
 	UFUNCTION(BlueprintPure)
 		bool IsHealed() const;
 
+	UFUNCTION(BlueprintPure)
+		bool IsAttacking() const;
+
+	void Attack();
+
+	void Patrol();
+
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
 
 
@@ -38,4 +45,7 @@ private:
 
 	UPROPERTY(VisibleAnywhere)
 		float Health;
+
+	UPROPERTY(VisibleAnywhere)
+		bool Attacking;
 };
