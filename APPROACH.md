@@ -691,3 +691,19 @@ DONE
 - Lose state working
 - Added win state to all pawns healed
 - Win state working
+
+## Session 53
+
+Minutes: 45 
+
+TODO
+- Make win state work with multiple AIs
+- Make AIs stop attacking if player dead
+- Random AI patrol movement
+- Change pod creature iris colour
+
+DONE
+- Changed AI controller to check for podcreatures instead of players
+- Win state working with multiple creatures
+- Looking for ways to make patrol random, could be long, might be best to move on to implementing custom player character instead
+- Tried changing iris colour from ABP, might try again from BP

@@ -39,7 +39,7 @@ bool AMyShooterAIController::IsDead() const
 
 bool AMyShooterAIController::IsHealed() const
 {
-	AMyPlayerCharacter* ControlledCharacter = Cast<AMyPlayerCharacter>(GetPawn());
+	APodCreature* ControlledCharacter = Cast<APodCreature>(GetPawn());
 	if (ControlledCharacter != nullptr)
 	{
 		return ControlledCharacter->IsHealed();

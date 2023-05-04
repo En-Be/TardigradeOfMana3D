@@ -51,6 +51,7 @@ void AKillEmAllGameMode::PawnHealed(APawn* PawnHealed)
 	{
 		if (!Controller->IsHealed())
 		{
+			UE_LOG(LogTemp, Warning, TEXT("At least one not healed"));
 			return;
 		}
 	}
