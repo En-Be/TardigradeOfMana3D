@@ -678,3 +678,16 @@ TODO
 
 DONE
 - Player takes damage
+
+## Session 52
+
+Minutes: 30
+
+TODO
+- Fix lose and win states
+
+DONE
+- Changed AI controller to check for dead pod creatures
+- Lose state working
+- Added win state to all pawns healed
+- Win state working

@@ -27,6 +27,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION(BlueprintPure)
+		bool IsDead() const;
+
+	UFUNCTION(BlueprintPure)
 		bool IsHealed() const;
 
 	UFUNCTION(BlueprintPure)

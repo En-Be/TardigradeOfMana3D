@@ -22,6 +22,11 @@ void APodCreature::BeginPlay()
 	Attacking = false;
 }
 
+bool APodCreature::IsDead() const
+{
+	return Health <= 0;
+}
+
 // Called every frame
 void APodCreature::Tick(float DeltaTime)
 {
@@ -69,7 +74,7 @@ float APodCreature::TakeDamage(float DamageAmount, FDamageEvent const& DamageEve
 		ATardigradeOfMana3DGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ATardigradeOfMana3DGameModeBase>();
 		if (GameMode != nullptr)
 		{
-			//GameMode->PawnHealed(this);
+			GameMode->PawnHealed(this);
 		}
 	}
 

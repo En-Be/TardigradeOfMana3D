@@ -5,6 +5,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "MyPlayerCharacter.h"
+#include "PodCreature.h"
 
 void AMyShooterAIController::BeginPlay()
 {
@@ -27,7 +28,7 @@ void AMyShooterAIController::Tick(float DeltaSeconds)
 
 bool AMyShooterAIController::IsDead() const
 {
-	AMyPlayerCharacter* ControlledCharacter = Cast<AMyPlayerCharacter>(GetPawn());
+	APodCreature* ControlledCharacter = Cast<APodCreature>(GetPawn());
 	if (ControlledCharacter != nullptr)
 	{
 		return ControlledCharacter->IsDead();

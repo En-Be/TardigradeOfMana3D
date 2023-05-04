@@ -15,13 +15,19 @@ void AKillEmAllGameMode::PawnKilled(APawn* PawnKilled)
 	APlayerController* PlayerController = Cast<APlayerController>(PawnKilled->GetController());
 	if (PlayerController != nullptr)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Killed pawn is player"));
+
 		EndGame(false);
 	}	
 
 	for (AMyShooterAIController* Controller : TActorRange<AMyShooterAIController>(GetWorld()))
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Checking if any ai aren't dead"));
+
 		if (!Controller->IsDead())
 		{
+			//UE_LOG(LogTemp, Warning, TEXT("Checking if any ai aren't dead"));
+
 			return;
 		}
 	}
@@ -63,8 +69,8 @@ void AKillEmAllGameMode::EndGame(bool bIsPlayerWinner)
 
 void AKillEmAllGameMode::OpenGate()
 {
-	UE_LOG(LogTemp, Warning, TEXT("A pawn was healed"));
-
+	UE_LOG(LogTemp, Warning, TEXT("All pawns are healed"));
+	EndGame(true);
 	/*
 	for (AController* Controller : TActorRange<AController>(GetWorld()))
 	{
