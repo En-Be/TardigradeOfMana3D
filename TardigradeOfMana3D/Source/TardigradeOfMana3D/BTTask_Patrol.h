@@ -13,5 +13,9 @@ UCLASS()
 class TARDIGRADEOFMANA3D_API UBTTask_Patrol : public UBTTaskNode
 {
 	GENERATED_BODY()
-	
+public:
+	UBTTask_Patrol();
+
+protected:
+	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 };

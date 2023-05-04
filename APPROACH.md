@@ -654,3 +654,23 @@ TODO
 - Switch pod creature animation state for attack/move
 - BTTask 'attack' sets a bool which is used to update state machine
 - Animgraph notify works
+
+
+## Session 50
+
+Minutes: 30
+
+TODO
+- BTTask for patrol state
+- Collider for attack damage event
+
+DONE
+- BTTask for patrol state
+- Added a collider at attack impact position on pod creature
+- Added begin and end overlap events on the pod creature, which flip a bool
+
+## 
+
+
+
+- Check bool at hit notify to trigger takedamage
