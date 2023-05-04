@@ -669,8 +669,12 @@ DONE
 - Added a collider at attack impact position on pod creature
 - Added begin and end overlap events on the pod creature, which flip a bool
 
-## 
+## Session 51
 
+Minutes: 50
 
-
+TODO
 - Check bool at hit notify to trigger takedamage
+
+DONE
+- Player takes damage

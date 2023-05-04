@@ -20,7 +20,6 @@ void APodCreature::BeginPlay()
 	Health = MaxHealth / 10;
 
 	Attacking = false;
-
 }
 
 // Called every frame
