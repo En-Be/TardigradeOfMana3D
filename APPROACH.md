@@ -707,3 +707,12 @@ DONE
 - Win state working with multiple creatures
 - Looking for ways to make patrol random, could be long, might be best to move on to implementing custom player character instead
 - Tried changing iris colour from ABP, might try again from BP
+
+---
+
+## Session 54
+
+Minutes: 480
+
+DONE
+- Player character created and rigged
