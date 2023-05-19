@@ -716,3 +716,12 @@ Minutes: 480
 
 DONE
 - Player character created and rigged
+
+---
+
+## Session 55
+
+Minutes: 300
+
+DONE
+- Player character textured and animated
