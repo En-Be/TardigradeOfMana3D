@@ -725,3 +725,28 @@ Minutes: 300
 
 DONE
 - Player character textured and animated
+
+---
+
+## Session 56
+
+Minutes: 70
+
+TODO
+- Export player to engine
+- Implement skeletal mesh
+
+DONE
+- Generated game ready rig
+- Exported
+- Errors on import: 
+    - zero scaling of bones breaks animation
+    - eye normals inside out
+- Recalculated eye normals, fixed
+- Baked textures into one, applied to material
+- Set specular and roughness on eye material
+- Set bone scaling to be 0.001 at relevant keyframes. Not playing back as intended, might need to make materials go invisible instead
+- Made new animation blueprint based on player skeleton, copied event graph from temp character, added variables
+- Made a blendspace with new player run and idle animations, added to animation blueprint
+- Character animations play when idle and running
+- Need animation for strafing + running backwards + jumping
