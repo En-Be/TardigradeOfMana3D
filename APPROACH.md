@@ -768,3 +768,18 @@ DONE
     - Strafing x 2
     - Run backwards
     - Baked to deform mesh
+
+## Session 58
+
+Minutes 35
+
+TODO
+- Toggle off jump
+- Implement animations in engine
+
+DONE
+- Imported fbx in a differnt folder to get import menu
+- Deselected import mesh, just animations imported
+- Moved animations to proper folder
+- Adjusted scales on blendspace, added new animations
+- Commented out the jump listener in c++

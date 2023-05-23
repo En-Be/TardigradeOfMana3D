@@ -58,7 +58,7 @@ void AMyPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAxis(TEXT("MoveSideways"), this, &AMyPlayerCharacter::MoveSideways);
 	PlayerInputComponent->BindAxis(TEXT("LookUpAndDown"), this, &AMyPlayerCharacter::LookUpAndDown);
 	PlayerInputComponent->BindAxis(TEXT("LookSideways"), this, &AMyPlayerCharacter::LookSideways);
-	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
+	//PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Shoot"), EInputEvent::IE_Pressed, this, &AMyPlayerCharacter::Shoot);
 }
 
