@@ -771,7 +771,7 @@ DONE
 
 ## Session 58
 
-Minutes 35
+Minutes 45
 
 TODO
 - Toggle off jump
@@ -783,3 +783,6 @@ DONE
 - Moved animations to proper folder
 - Adjusted scales on blendspace, added new animations
 - Commented out the jump listener in c++
+- Forgot to add the death animation, added
+- Kept playing death initially
+- Added a transition rule for back to alive, working
