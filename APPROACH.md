@@ -750,3 +750,21 @@ DONE
 - Made a blendspace with new player run and idle animations, added to animation blueprint
 - Character animations play when idle and running
 - Need animation for strafing + running backwards + jumping
+
+---
+
+## Session 57
+
+Minutes: 45
+
+TODO
+- Animations:
+    - Strafing x 2
+    - Run backwards
+- Toggle off jump
+
+DONE
+- Animations:
+    - Strafing x 2
+    - Run backwards
+    - Baked to deform mesh
