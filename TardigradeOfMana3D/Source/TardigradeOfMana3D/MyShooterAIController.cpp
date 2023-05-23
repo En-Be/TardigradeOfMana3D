@@ -26,6 +26,13 @@ void AMyShooterAIController::Tick(float DeltaSeconds)
 	Super::Tick(DeltaSeconds);
 }
 
+void AMyShooterAIController::PlayerDied()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Player has died"));
+	GetBlackboardComponent()->SetValueAsBool(TEXT("PlayerDied"), true);
+	
+}
+
 bool AMyShooterAIController::IsDead() const
 {
 	APodCreature* ControlledCharacter = Cast<APodCreature>(GetPawn());

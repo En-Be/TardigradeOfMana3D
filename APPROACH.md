@@ -778,7 +778,7 @@ TODO
 - Implement animations in engine
 
 DONE
-- Imported fbx in a differnt folder to get import menu
+- Imported fbx in a different folder to get import menu
 - Deselected import mesh, just animations imported
 - Moved animations to proper folder
 - Adjusted scales on blendspace, added new animations
@@ -786,3 +786,20 @@ DONE
 - Forgot to add the death animation, added
 - Kept playing death initially
 - Added a transition rule for back to alive, working
+
+## Session 59
+
+Minutes: 75
+
+TODO
+- Player aim angle
+- Make gun socket and hide gun
+- Stop pod attacking when player dead
+- Add a menu level
+
+DONE
+- Made gun invisible
+- Added a socket on player character
+- Gun snaps to socket
+- Basic particle effects on shot and hit
+- Tried setting a blackboard variable via c++ to stop enemy attacking, can't get behaviour tree to work. Skipping for now.

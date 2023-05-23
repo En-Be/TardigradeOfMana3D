@@ -17,6 +17,11 @@ void AKillEmAllGameMode::PawnKilled(APawn* PawnKilled)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Killed pawn is player"));
 
+		for (AMyShooterAIController* Controller : TActorRange<AMyShooterAIController>(GetWorld()))
+		{
+			Controller->PlayerDied();
+		}
+
 		EndGame(false);
 	}	
 
