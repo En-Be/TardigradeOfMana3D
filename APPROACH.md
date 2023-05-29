@@ -823,3 +823,19 @@ DONE
 - Turned off reset timer
 - Door bp checking player controller for bool
 - Door destroys self when bool is true
+
+## Session 77
+
+Minutes: 40
+
+TODO
+- Add end zone inside building
+- Display win state and timer
+- Disable player input and hud on menu
+
+DONE
+- Add end zone inside building
+- Display win state and timer
+- Disable player input and hud on menu
+- Changed HUD colours
+- Stopped hud disappearing on all healed
