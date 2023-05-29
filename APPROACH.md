@@ -802,4 +802,24 @@ DONE
 - Added a socket on player character
 - Gun snaps to socket
 - Basic particle effects on shot and hit
-- Tried setting a blackboard variable via c++ to stop enemy attacking, can't get behaviour tree to work. Skipping for now.
+- Tried setting a blackboard variable via c++ to stop enemy attacking, can't get behaviour tree to work.
+- Was on the wrong blackboard! Fixed.
+
+--- 
+
+## Session 76
+
+Minutes: 30
+
+TODO
+- Use blueprint to check for all healed
+- Remove current allhealed behaviour
+- Open gate on allhealed
+
+DONE
+- Recalculated world collision mesh and added a (hidden) plane at floot level
+- Added a boolean to player controller that is set to true when all healed
+- Turned off win hud
+- Turned off reset timer
+- Door bp checking player controller for bool
+- Door destroys self when bool is true

@@ -17,7 +17,6 @@ void AMyShooterAIController::BeginPlay()
 
 		APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 		GetBlackboardComponent()->SetValueAsVector(TEXT("StartLocation"), GetPawn()->GetActorLocation());
-
 	}
 }
 
@@ -29,8 +28,9 @@ void AMyShooterAIController::Tick(float DeltaSeconds)
 void AMyShooterAIController::PlayerDied()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Player has died"));
-	GetBlackboardComponent()->SetValueAsBool(TEXT("PlayerDied"), true);
-	
+	GetBlackboardComponent()->SetValueAsObject(TEXT("Player"), nullptr);
+	GetBlackboardComponent()->ClearValue(TEXT("Player"));
+	GetBlackboardComponent()->ClearValue(TEXT("LastKnownPlayerLocation"));	
 }
 
 bool AMyShooterAIController::IsDead() const

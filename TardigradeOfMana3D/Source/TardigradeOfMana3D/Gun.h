@@ -4,7 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+
+#include "NiagaraComponent.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
+
 #include "Gun.generated.h"
+
+class UNiagaraSystem;
+
 
 UCLASS()
 class TARDIGRADEOFMANA3D_API AGun : public AActor

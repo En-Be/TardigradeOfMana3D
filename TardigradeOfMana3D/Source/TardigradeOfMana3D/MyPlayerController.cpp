@@ -4,6 +4,7 @@
 #include "MyPlayerController.h"
 #include "TimerManager.h"
 #include "Blueprint/UserWidget.h"
+#include "Kismet/GameplayStatics.h"
 
 void AMyPlayerController::BeginPlay()
 {
@@ -24,11 +25,14 @@ void AMyPlayerController::GameHasEnded(class AActor* EndGameFocus, bool bIsWinne
 
 	if (bIsWinner)
 	{
+		OpenGate = true;
+		/*
 		UUserWidget* WinScreen = CreateWidget(this, WinScreenClass);
 		if (WinScreen != nullptr)
 		{
 			WinScreen->AddToViewport();
 		}
+		*/
 	}
 	else
 	{
@@ -40,7 +44,12 @@ void AMyPlayerController::GameHasEnded(class AActor* EndGameFocus, bool bIsWinne
 	}
 
 
-	GetWorldTimerManager().SetTimer(RestartTimer, this, &APlayerController::RestartLevel, RestartDelay);
+	//GetWorldTimerManager().SetTimer(RestartTimer, this, &AMyPlayerController::GoToMenu, RestartDelay);
+}
+
+void AMyPlayerController::GoToMenu()
+{
+	UGameplayStatics::OpenLevel(this, "Menu");
 }
 
 

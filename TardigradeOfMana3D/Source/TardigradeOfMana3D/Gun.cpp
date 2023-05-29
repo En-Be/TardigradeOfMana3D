@@ -8,7 +8,9 @@
 #include "DrawDebugHelpers.h"
 #include "Engine/DamageEvents.h"
 
-
+#include "NiagaraComponent.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraSystem.h"
 
 // Sets default values
 AGun::AGun()

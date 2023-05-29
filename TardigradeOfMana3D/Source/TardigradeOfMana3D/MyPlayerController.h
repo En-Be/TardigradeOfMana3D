@@ -16,6 +16,12 @@ class TARDIGRADEOFMANA3D_API AMyPlayerController : public APlayerController
 public:
 	virtual void GameHasEnded(class AActor* EndGameFocus = nullptr, bool bIsWinner = false) override;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Mesh")
+		class UStaticMeshComponent* MeshComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		bool OpenGate;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -35,4 +41,8 @@ private:
 
 	UPROPERTY()
 		UUserWidget* HUD;
+
+
+
+	void GoToMenu();
 };
