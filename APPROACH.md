@@ -839,3 +839,24 @@ DONE
 - Disable player input and hud on menu
 - Changed HUD colours
 - Stopped hud disappearing on all healed
+
+---
+
+## Session 78
+
+Minutes: 50
+
+TODO
+- Mana sharing logic
+
+DONE
+- Gun also damages player
+- Player heals when all healed
+
+---
+
+TODO
+- Environment assets (mold, textiles)
+- Menu title, animations, game description and inctruction
+- Win state details (tease features and content)
+- Audio

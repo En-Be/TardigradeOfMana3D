@@ -19,7 +19,7 @@ void AMyPlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	Health = MaxHealth/10;
+	Health = MaxHealth;
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
 	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
@@ -66,6 +66,7 @@ float AMyPlayerCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dam
 {
 	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
 	DamageToApply = FMath::Min(Health, DamageToApply);
+	UE_LOG(LogTemp, Warning, TEXT("Damage to apply %f"), DamageToApply);
 	Health -= DamageToApply;
 	Health = FMath::Clamp(Health, 0, MaxHealth);
 	UE_LOG(LogTemp, Warning, TEXT("Health remaining %f"), Health);

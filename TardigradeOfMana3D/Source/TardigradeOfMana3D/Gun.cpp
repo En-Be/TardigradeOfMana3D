@@ -12,6 +12,8 @@
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraSystem.h"
 
+#include "MyPlayerCharacter.h"
+
 // Sets default values
 AGun::AGun()
 {
@@ -44,6 +46,18 @@ void AGun::PullTrigger()
 			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);
 			AController* OwnerController = GetOwnerController();
 			HitActor->TakeDamage(Damage, DamageEvent, OwnerController, this);
+			
+			ACharacter* myCharacter = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0);
+			AMyPlayerCharacter* OwnerCharacter = Cast<AMyPlayerCharacter>(myCharacter);
+			if (OwnerCharacter != nullptr)
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Cast worked"));
+				OwnerCharacter->TakeDamage(Damage*-1, DamageEvent, OwnerController, this);
+			}
+			else
+			{
+				UE_LOG(LogTemp, Warning, TEXT("Cast failed"));
+			}
 		}
 	}
 
