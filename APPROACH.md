@@ -853,10 +853,23 @@ DONE
 - Gun also damages player
 - Player heals when all healed
 
----
+## Session 79
+
+Minutes: 60
 
 TODO
-- Environment assets (mold, textiles)
+- Better particles
+
+DONE
+- Set rifle world scale
+- Changed to niagara particles instead of legacy
+- Burst works on rifle
+- Strange burst behaviour at impact
+- Trying to emit impact, not working
+
+---
+
 - Menu title, animations, game description and inctruction
 - Win state details (tease features and content)
+- Environment assets (mold, textiles)
 - Audio

@@ -30,7 +30,8 @@ AGun::AGun()
 void AGun::PullTrigger()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Bang!"));
-	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
+	//UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
+	UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"), FVector(0.f), FRotator(0.f), EAttachLocation::Type::KeepRelativeOffset, true);
 	UGameplayStatics::SpawnSoundAttached(MuzzleSound, Mesh, TEXT("MuzzleFlashSocket"));
 
 	FHitResult Hit;
@@ -38,9 +39,17 @@ void AGun::PullTrigger()
 	bool bSuccess = GunTrace(Hit, ShotDirection);
 	if (bSuccess)
 	{
-		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactEffect, Hit.Location, ShotDirection.Rotation());
-		UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
 		AActor* HitActor = Hit.GetActor();
+		UStaticMeshComponent* MeshComp = HitActor->FindComponentByClass<UStaticMeshComponent>();
+		//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ImpactEffect, Hit.Location, ShotDirection.Rotation());
+		//UNiagaraFunctionLibrary::SpawnSystemAtLocation(GetWorld(), MuzzleFlash, Hit.Location, FRotator(0.f), FVector(0.f), EAttachLocation::Type::KeepRelativeOffset, true);
+		if (MeshComp != nullptr)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("FoundTarget"));
+			UNiagaraFunctionLibrary::SpawnSystemAttached(MuzzleFlash, MeshComp, NAME_None, FVector(0.f), FRotator(0.f), EAttachLocation::Type::KeepRelativeOffset, true);
+		}
+
+		UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, Hit.Location);
 		if (HitActor != nullptr)
 		{
 			FPointDamageEvent DamageEvent(Damage, Hit, ShotDirection, nullptr);

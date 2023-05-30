@@ -25,6 +25,9 @@ public:
 
 	void PullTrigger();
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		USkeletalMeshComponent* Mesh;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -37,17 +40,14 @@ private:
 	UPROPERTY(VisibleAnywhere)
 		USceneComponent* Root;
 
-	UPROPERTY(VisibleAnywhere)
-		USkeletalMeshComponent* Mesh;
-
 	UPROPERTY(EditAnywhere)
-		UParticleSystem* MuzzleFlash;
+		UNiagaraSystem* MuzzleFlash;
 
 	UPROPERTY(EditAnywhere)
 		USoundBase* MuzzleSound;
 
 	UPROPERTY(EditAnywhere)
-		UParticleSystem* ImpactEffect;
+		UNiagaraSystem* ImpactEffect;
 
 	UPROPERTY(EditAnywhere)
 		USoundBase* ImpactSound;
